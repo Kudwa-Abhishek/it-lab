@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-latest.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(document).ready(
+                function(){
+                    $("#color1").css("background-color","yellow");
+                    $("#color2").css("background-color","grey");
+                    $("#color3").css("background-color","yellow");
+                    $("#button").click(
+                        function(){
+                        $("#diver").animate({marginRight:"+=250px"});
+                        }
+                    );
+                }
+            );
+        </script>
+    </head>
+    <body>
+        <div id="diver" align="right">
+            <table>
+                <tr id="color1">
+                    <th>one</th>
+                    <th>two</th>
+                    <th>three</th>
+                </tr>
+                <tr id="color2">
+                    <td>rock</td>
+                    <td>paper</td>
+                    <td>scissor</td>
+                </tr>
+                <tr id="color3">
+                    <td>you</td>
+                    <td>me</td>
+                    <td>menuu</td>
+                </tr>
+            </table>
+            <img src="./khan.jpg" width="100px" height="100px">
+        </div>
+        <button id="button">ANIMATIONNNNN</button>
+    </body>
+</html>
